@@ -2,7 +2,7 @@
 projectDir = pwd;
 
 % Set data path
-datPath = fullfile(projectDir, 'pharlap', 'dat');
+datPath = fullfile(projectDir, 'pharlap_4.7.4/', 'dat');
 setenv('DIR_MODELS_REF_DAT', datPath);
 
 % Add paths
