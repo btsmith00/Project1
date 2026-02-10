@@ -44,7 +44,7 @@ iono_en_grid_5 = iono_pf_grid_5.^2/(pfsq_conv*1e6);
 %%
 
 
-elevs = [90, 90, 90, 90, 90];
+
 nhops = 1;
 bearing = azim;
 tol = [];
