@@ -43,8 +43,8 @@ iono_en_grid_5 = iono_pf_grid_5.^2/(pfsq_conv*1e6);
 
 %%
 
-
-
+freq = [.001,.01,.1,1,5];
+elevs = [90, 90, 90, 90, 90];
 nhops = 1;
 bearing = azim;
 tol = [];
@@ -53,7 +53,6 @@ tol(2) = 0.025;
 tol(3) = 25;
 irregs_flag = 1; % irreg off
 
-freqs = 1:.1:10;
 
 [ray_data, ray_path_data, ray_state_vec] = ...
       raytrace_2d(origin_lat, origin_lon, elevs, bearing, freq, nhops, ...
@@ -70,3 +69,20 @@ end
 %%
 figure;
 plot(freq,[ray_data.virtual_height],"o")
+
+%%
+nhops = 1;
+bearing = azim;
+tol = [];
+tol(1) = 1e-7;
+tol(2) = 0.025;
+tol(3) = 25;
+irregs_flag = 1; % (irreg =1 is on)
+
+freqs = 1:.1:10;
+
+for ii = 1:length(freqs)
+    freq
+
+
+end
